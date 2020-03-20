@@ -12,7 +12,7 @@ Config::~Config() {
 }
 
 void Config::setParaFile() {
-    string filename = ros::package::getPath("myslam") + "/config/kitti.yaml";
+    string filename = ros::package::getPath("light_weight_slam") + "/config/kitti.yaml";
     if(config_ == nullptr){
         config_ = shared_ptr<Config>(new Config);
         config_->file_.open(filename, cv::FileStorage::READ);

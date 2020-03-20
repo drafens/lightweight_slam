@@ -45,6 +45,9 @@ bool System::init(int argc, char **argv) {
 
     viewer_->setMap(map_);
 
+    mapper_->setMap(map_);
+    mapper_->setCamera(camera_);
+
     map_->setCamera(camera_);
 }
 

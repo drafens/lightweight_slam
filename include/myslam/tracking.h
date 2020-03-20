@@ -32,7 +32,6 @@ public:
     void setCamera(Camera::Ptr camera){camera_=move(camera);}
     void setViewer(shared_ptr<Viewer> viewer){viewer_=move(viewer);}
     void setOptimizer(shared_ptr<Optimizing> optimizer){optimizer_=move(optimizer);}
-    void setLoopClosure(shared_ptr<LoopClosure> loop_closure){loop_closure_=move(loop_closure);};
     void setMapper(shared_ptr<Mapper> mapper){mapper_=move(mapper);}
 
     bool track(const Frame::Ptr& frame);

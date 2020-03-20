@@ -23,7 +23,6 @@
   <build_depend>opencv4</build_depend>
   <build_depend>eigen3</build_depend>
   <build_depend>g2o</build_depend>
-  <build_depend>pcl</build_depend>
   <build_depend>dbow3</build_depend>
   <build_depend>pangolin</build_depend>
   <build_depend>glog</build_depend>
@@ -34,7 +33,6 @@
   <exec_depend>opencv4</exec_depend>
   <exec_depend>eigen3</exec_depend>
   <exec_depend>g2o</exec_depend>
-  <exec_depend>pcl</exec_depend>
   <exec_depend>dbow3</exec_depend>
   <exec_depend>pangolin</exec_depend>
   <exec_depend>glog</exec_depend>

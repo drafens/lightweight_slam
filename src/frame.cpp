@@ -33,9 +33,7 @@ bool Frame::insertKeyFrame(const Frame::Ptr& keyframe) {
     Sophus::Vector6d relative_pose = (pose_->T().inverse() * keyframe->pose_->T()).log();
     Vector3d trans = relative_pose.head<3>();
     Vector3d rot = relative_pose.tail<3>();
-    if(N_<min_fpoints || rot.norm()>max_rotation || trans.norm()>max_translation) {
-    //if(N_<40) {
-    //    LOGERROR) << rot.norm() << " " << trans.norm();
+    if(N_<min_fpoints/* || rot.norm()>max_rotation || trans.norm()>max_translation*/) {
         setKeyFrame();
         return true;
     }
