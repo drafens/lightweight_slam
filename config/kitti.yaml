@@ -1,0 +1,66 @@
+%YAML:1.0
+
+# for dataset path
+Path.dataset: /home/drafens/WorkPlace/dataset/KITTI/data_odometry_gray/dataset/sequences/05/
+# voc path
+Path.vocabulary: /home/drafens/WorkPlace/dran-slam/src/myslam/config/vocabulary_kitti05_gftt_orb.gz
+# output path
+Path.output: /home/drafens/
+
+# for camera K
+Camera.fx: 707.0912
+Camera.fy: 707.0912
+Camera.cx: 601.8873
+Camera.cy: 183.1104
+# for camera DisCoef
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+Camera.k3: 0.0
+# for stereo match
+Camera.baseline: 0.53715
+# for fps
+Camera.fps: 30
+
+# for FeaturePoint(ORB & GFTT)
+FeaturePoint.num_features: 500
+Tracking.min_features_init: 50
+Tracking.num_tracking_lost: 5
+
+# for stereo
+Tracking.max_stereo_match_tan: 0.07
+Tracking.min_disparity: 8
+Tracking.max_disparity: 100
+
+# for map
+Mapping.min_frame_distance: 0.2
+Mapping.num_keyframe: 7
+
+# creat keyframe
+Tracking.min_fpoints_keyframe: 40 # fpoints<val denote need new keyframe
+Tracking.max_rotation_keyframe: 0.8
+Tracking.max_translation_keyframe: 30
+
+# for viewer
+Viewer.width: 1024
+Viewer.height: 768
+
+# for loop closure
+LoopClosure.min_score: 0.02
+LoopClosure.max_score: 0.05
+LoopClosure.score_factor: 2.0 # recommend bigger than 1
+
+
+
+
+
+
+
+FeaturePoint.scale_factor: 1.2
+FeaturePoint.num_levels: 8
+
+# for check frame is good
+Tracking.min_inliers: 30
+Tracking.max_pose_changed_frame: 5.0
+

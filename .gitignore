@@ -1,0 +1,9 @@
+**/build
+
+**/devel
+
+**/.idea
+
+**/cmake-build-*
+
+.catkin*
